@@ -8,7 +8,7 @@ WORKDIR /python-test-calculator
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-RUN ["coverage report -m"]
+#RUN ["coverage report -m"]
 
 RUN ["pytest", "-v", "--junitxml=reports/result.xml"]
 
